@@ -1,0 +1,8 @@
+  <nav>
+                <ul>
+                    <li> <a id="#">Private GroupChats</a> </li>
+                    <li> <a id="#">DMs</a> </li>
+                    <li> <a id="#">Discussions</a> </li>
+                </ul>
+            </nav>
+            <a class ="cta" href="#"><button>contact</button> </a>

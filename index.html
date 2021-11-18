@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="main.js"></script>
+    <script src="firebase.mjs" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>welcome to ChitChat</h1>
+    </header>
+    <div id="button"></div>
+    <div id="ChatRooms"> </div>
+
+    <div id="signup" style="display: none">
+      Register to view ChatRooms
+      <br />
+      Email: <input id="emailReg" /> Username:<input id="users-name" />
+      Password: <input type="password" id="passwordReg" />
+      <button id="registerBtn">Register</button>
+      <br />
+      Have an account? <a id="loginLink">Click here to sign in.</a>
+    </div>
+
+    <div id="login" style="display: none">
+      <h2>Log in to view your ChatRooms</h2>
+      <br />
+      <div class="textColor">Email:</div>
+      <input id="email" />
+      <div class="textColor">Password:</div>
+      <input type="password" id="password" />
+      <button id="loginBtn">Log In</button>
+      <br />
+      <div class="textColor">New user?</div>
+      <a id="signupLink">Click here to register.</a>
+
+      <div class="error"></div>
+    </div>
+    <!--if this Breaks move back to 33 -->
+    <div id="addComment" style="display: none">
+      <textarea name="" id="newComment" cols="30" rows="3"></textarea>
+      <button id="addCommentBtn">Send</button>
+      <br />
+      <input type="file" id="inputfile" />
+
+      <a id="slattbratha">Click here to log out.</a>
+    </div>
+  </body>
+</html>
