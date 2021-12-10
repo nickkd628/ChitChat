@@ -18,23 +18,30 @@ function createComment(commentDoc) {
    div.onmousedown = function (e) {
      const timeToHoldForDelete = Date.now();
      div.onmouseup = function (e) {
-       if (Date.now() > timeToHoldForDelete + 3000) {
+       if (Date.now() > timeToHoldForDelete + 1500) {
         
          div.remove();
          deleteDoc(div.id);
           alert("Deleted");
        }
+       else{
+        var msg = prompt("are you sure u want to edit it");
+        if(msg){
+           edit(div.id, msg);
+           div.innerHTML = `${msg}`;
+        }
+       }
      }
    }
 
-  div.addEventListener("mouseup", () => {
-    var msg = prompt("are you sure u want to change");
-    if(msg){
-       edit(div.id, msg);
-       div.innerHTML = `${msg}`;
-    }
+  // div.addEventListener("mouseup", () => {
+  //   var msg = prompt("are you sure u want to change");
+  //   if(msg){
+  //      edit(div.id, msg);
+  //      div.innerHTML = `${msg}`;
+  //   }
    
-  });
+  // });
 }
 
 window.onload = function () {
