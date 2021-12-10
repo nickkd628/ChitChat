@@ -35,16 +35,15 @@ head{
     margin: auto;
     padding: 20px;
     width: 1025px;
-    height: 425px; 
+    height: 425px;
 
 }
 
 .ChatRooms {
-    
     background-color:#44c767;
 	border-radius:28px;
 	border:1px solid #18ab29;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -107,6 +106,7 @@ a{
     padding: 20px;
     width: 200px;
     height: 300px; 
+    color: wheat;
 }
 
 input{
@@ -136,3 +136,17 @@ input{
 .textColor{
 color: white;
 }
+img{
+    height:auto;
+    width: 20%;
+    position: relative;
+      top: -570px;
+      right: -595px;
+    
+}
+
+.light-mode {
+    
+    background-color: white;
+    color: black;
+  }
